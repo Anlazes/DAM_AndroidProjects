@@ -4,7 +4,6 @@ package com.example.toni.p01_splash_image;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.webkit.WebView;
 import android.widget.ImageView;
 
 import com.koushikdutta.ion.Ion;
@@ -24,7 +23,7 @@ public class SplashActivity extends Activity {
 
         //uso de la libreria Ion para cargar un gif en la Splash Screen
         ImageView image = (ImageView)findViewById(R.id.imageView2);
-        Ion.with(image).load("http://www.europcar.rs/images/loading.gif");
+        Ion.with(image).load("http://oasisfm.cl/oasisfm/imag/master/iconoCargando.gif");
 
         TimerTask task = new TimerTask() {
             @Override
