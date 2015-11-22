@@ -17,6 +17,8 @@ public class StaticFragment extends Fragment {
         // Required empty public constructor
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,11 +35,10 @@ public class StaticFragment extends Fragment {
         final Integer[] listaIconos = new Integer[]{R.drawable.ic_face_black_24dp, R.drawable.ic_play_circle_outline_black_24dp,
                 R.drawable.ic_library_books_black_24dp, R.drawable.ic_info_black_24dp};
 
-        ListView lista;
 
         //creamos el adapter personalizado con los arrays creados
         CustomAdapter adapter = new CustomAdapter(this.getActivity(), listaNombres, listaIconos);
-        lista = (ListView) getActivity().findViewById(R.id.listview);
+        ListView lista = (ListView) getActivity().findViewById(R.id.listview);
         lista.setAdapter(adapter);
     }
 }
