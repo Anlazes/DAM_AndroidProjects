@@ -29,7 +29,7 @@ public class SplashActivity extends Activity {
             @Override
             public void run() {
                 //llamada a la MainActivity
-                Intent mainIntent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent mainIntent = new Intent(getApplicationContext(), PerfilActivity.class);
                 startActivity(mainIntent);
                 //destruimos la activity para no poder volver a ella pulsando atrás
                 finish();
