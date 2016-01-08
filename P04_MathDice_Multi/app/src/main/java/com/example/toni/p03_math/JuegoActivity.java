@@ -10,7 +10,7 @@ public class JuegoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego);
 
-        //JuegoFragment jFrag = (JuegoFragment) getFragmentManager().findFragmentById(R.id.fJuego);
+
 
     }
 }
