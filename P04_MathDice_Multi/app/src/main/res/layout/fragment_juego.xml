@@ -1,0 +1,120 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toni.p03_math.JuegoFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white">
+        //android:layout_gravity="left|bottom">
+
+        <ImageView
+            android:id="@+id/dado1"
+            android:src="@drawable/dado1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/dado2"
+            android:src="@drawable/dado2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/dado1" />
+        <ImageView
+            android:id="@+id/dado3"
+            android:src="@drawable/dado1_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dado2"
+            android:layout_toEndOf="@+id/dado1" />
+        <ImageView
+            android:id="@+id/dado4"
+            android:src="@drawable/dado3_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dado5"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/dado5"
+            android:src="@drawable/dado4_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dado1" />
+        <ImageView
+            android:id="@+id/dado6"
+            android:src="@drawable/dode12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/boton_mas"
+            android:src="@drawable/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="27dp" />
+        <ImageView
+            android:id="@+id/boton_menos"
+            android:src="@drawable/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/boton_mas"
+            android:layout_toEndOf="@+id/boton_mas" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="100dp"
+            android:id="@+id/num1"
+            android:layout_above="@+id/dado3"
+            android:layout_toEndOf="@+id/dado3"
+            android:layout_marginStart="163dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[]"
+            android:textColor="@android:color/black"
+            android:textSize="100dp"
+            android:id="@+id/signo"
+            android:layout_alignTop="@+id/num1"
+            android:layout_toEndOf="@+id/num1"
+            android:layout_marginStart="42dp" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="100dp"
+            android:layout_alignTop="@+id/signo"
+            android:layout_toEndOf="@+id/signo"
+            android:layout_marginStart="46dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-"
+            android:id="@+id/result"
+            android:textColor="@android:color/black"
+            android:textSize="100dp"
+            android:layout_alignTop="@+id/boton_menos"
+            android:layout_alignEnd="@+id/signo" />
+
+    </RelativeLayout>
+
+</FrameLayout>
