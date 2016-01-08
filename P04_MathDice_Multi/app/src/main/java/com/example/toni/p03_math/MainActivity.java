@@ -23,18 +23,12 @@ public class MainActivity extends Activity implements StaticFragment.StaticFragm
         if (findViewById(R.id.fragment_container) != null) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-            // Crea un nuevo Fragment para poner en la Activity
-            StaticFragment mainFragment = new StaticFragment();
-
-            // Añade el fragment
-            getFragmentManager().beginTransaction().add(R.id.listFragment, mainFragment)
-                    .commit();
-
             // Cargamos el fragment de perfil en el fragment dinámico
             PerfilFragment pFrag = new PerfilFragment();
             getFragmentManager().beginTransaction().replace(R.id.fragment_container, pFrag).commit();
 
         } else {
+            //Para dispositivo pequeño se carga el fragment estático en su layout
             StaticFragment mainFragment = new StaticFragment();
             getFragmentManager().beginTransaction().replace(R.id.single_frag, mainFragment).commit();
         }
