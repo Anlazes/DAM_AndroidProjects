@@ -31,8 +31,10 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".JuegoActivity" />
-        <activity android:name=".PerfilActivity" />
+        <activity android:name=".JuegoActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name=".PerfilActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
     </application>
 
 </manifest>

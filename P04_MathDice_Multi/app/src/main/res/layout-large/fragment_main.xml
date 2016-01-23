@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="horizontal"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<fragment
+    android:name="com.example.toni.p03_math.StaticFragment"
+    android:id="@+id/listFragment"
+    android:layout_width="0dp"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_weight="1"
+    tools:layout="@layout/lista_main">
+</fragment>
 
-    <fragment
-        android:name="com.example.toni.p03_math.StaticFragment"
-        android:id="@+id/listFragment"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        tools:layout="@layout/lista_main">
-    </fragment>
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="3">
-    </FrameLayout>
+<FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="3">
+</FrameLayout>
 
 </LinearLayout>

@@ -1,9 +1,9 @@
 package com.example.toni.p03_math;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class JuegoActivity extends AppCompatActivity {
+public class JuegoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
